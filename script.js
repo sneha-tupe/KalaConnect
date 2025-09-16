@@ -90,7 +90,7 @@ Important Rules: If you don’t know a specific detail about a product, politely
         // =================================================================
         // === IMPORTANT: PASTE YOUR GOOGLE AI API KEY HERE ===
         // =================================================================
-        const apiKey = "AIzaSyCpwV-c7G5j8CRCvbw52w9D8SfoGIIv02M";
+        const apiKey = "";
         // =================================================================
 
         const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${apiKey}`;
@@ -189,7 +189,7 @@ Important Rules: If you don’t know a specific detail about a product, politely
         analyzeButton.disabled = true;
 
         // --- AI API Call ---
-        const apiKey = "AIzaSyCpwV-c7G5j8CRCvbw52w9D8SfoGIIv02M"; // IMPORTANT: Make sure your key is here!
+        const apiKey = ""; // IMPORTANT: Make sure your key is here!
         const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${apiKey}`;
 
         const prompt = `Analyze this image of a customer's design idea, likely for jewelry or a craft item. Provide a short, appealing description for an artisan to read, and a list of 5-7 relevant tags. Format the output exactly like this:
@@ -268,4 +268,5 @@ Tags: [tag1], [tag2], [tag3], ...`;
     });
 
 // The final }); from the original script should be after this block
+
 });

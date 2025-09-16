@@ -1,0 +1,108 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fdfaf7;
+    color: #3f352e;
+}
+.font-serif {
+    font-family: 'Playfair Display', serif;
+}
+.hero-bg {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1599423300885-3c1533ea7171?q=80&w=2070&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+}
+.cta-button {
+    transition: all 0.3s ease;
+}
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.feature-card {
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+.feature-card:hover {
+    transform: translateY(-5px);
+    border-color: #e59a59;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+.step-indicator {
+    transition: all 0.3s ease;
+}
+.step-indicator.active {
+    background-color: #c77d45;
+    color: white;
+}
+.step-indicator:not(.active) {
+    background-color: #f3e9e0;
+    color: #8c6a4d;
+}
+.fade-in {
+    animation: fadeIn 0.8s ease-in-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.tech-logo-container {
+     filter: grayscale(100%);
+     opacity: 0.6;
+     transition: all 0.3s ease;
+}
+.tech-logo-container:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+.chat-window {
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.chat-bubble-enter {
+    transform: scale(0.9);
+    opacity: 0;
+}
+.chat-bubble-enter-active {
+    transform: scale(1);
+    opacity: 1;
+    transition: all 0.3s;
+}
+.typing-indicator span {
+    height: 8px;
+    width: 8px;
+    margin: 0 1px;
+    background-color: #9ca3af;
+    display: inline-block;
+    border-radius: 50%;
+    animation: bounce 1.4s infinite ease-in-out both;
+}
+.typing-indicator span:nth-child(1) { animation-delay: -0.32s; }
+.typing-indicator span:nth-child(2) { animation-delay: -0.16s; }
+@keyframes bounce {
+    0%, 80%, 100% { transform: scale(0); }
+    40% { transform: scale(1.0); }
+}
+/* ADD THESE STYLES TO THE BOTTOM OF style.css */
+
+.tag-pill {
+    background-color: #f3e9e0;
+    color: #8c6a4d;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+/* Loader animation */
+#loader {
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #3f352e;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

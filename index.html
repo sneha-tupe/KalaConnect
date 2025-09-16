@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KalaConnect AI - Empowering Indian Artisans</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="antialiased">
+
+    <header class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold font-serif text-[#c77d45]">Kala<span class="text-[#3f352e]">Connect</span> AI</h1>
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="#features" class="hover:text-[#c77d45] transition-colors">How it Works</a>
+                <a href="#discover" class="hover:text-[#c77d45] transition-colors">Discover Crafts</a>
+                <a href="#tech" class="hover:text-[#c77d45] transition-colors">Technology</a>
+            </nav>
+            <button class="md:hidden">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero-bg min-h-screen flex items-center justify-center pt-20">
+        <div class="text-center text-white px-6">
+            <h2 class="text-4xl md:text-6xl font-serif font-bold mb-4 leading-tight shadow-text">Giving India's Artisans a Digital Voice.</h2>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-gray-200">
+                An AI-powered co-pilot that helps local craftspeople tell their stories, market their art, and connect with a global audience.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#features" class="cta-button bg-[#c77d45] text-white font-semibold py-3 px-8 rounded-full shadow-lg">For Artisans</a>
+                <a href="#discover" class="cta-button bg-white text-[#3f352e] font-semibold py-3 px-8 rounded-full shadow-lg">For Buyers</a>
+            </div>
+        </div>
+    </section>
+
+    <main class="container mx-auto px-6 py-16 md:py-24">
+
+        <section id="challenge" class="text-center mb-16 md:mb-24">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">The Digital Divide</h2>
+            <p class="max-w-3xl mx-auto text-gray-600 mb-12">
+                India's rich artisanal heritage is at risk. Talented craftspeople lack the digital tools to thrive in the modern marketplace, creating a gap between their timeless art and a new generation of buyers.
+            </p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <i data-lucide="bar-chart-2" class="w-12 h-12 mx-auto mb-4 text-[#c77d45]"></i>
+                    <h3 class="font-bold text-xl mb-2">Marketing Gap</h3>
+                    <p class="text-gray-500">Lack of digital marketing skills limits their reach and profitability.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <i data-lucide="camera-off" class="w-12 h-12 mx-auto mb-4 text-[#c77d45]"></i>
+                    <h3 class="font-bold text-xl mb-2">Presentation Issues</h3>
+                    <p class="text-gray-500">Poor photography and storytelling fail to capture the art's true value.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <i data-lucide="globe-2" class="w-12 h-12 mx-auto mb-4 text-[#c77d45]"></i>
+                    <h3 class="font-bold text-xl mb-2">Market Access</h3>
+                    <p class="text-gray-500">Difficulty connecting with contemporary trends and global audiences.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="mb-16 md:mb-24">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">Your AI Assistant (`Sahayak`)</h2>
+                <p class="max-w-3xl mx-auto text-gray-600">
+                    We make selling online as easy as creating your art. Just snap a photo, tell its story, and let our AI handle the rest.
+                </p>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-8 md:gap-12 items-center">
+                <div class="w-full md:w-1/3">
+                    <div id="step-1" class="step-indicator active p-6 rounded-lg mb-4 cursor-pointer">
+                        <div class="flex items-center gap-4">
+                            <div class="bg-white text-[#c77d45] p-3 rounded-full"><i data-lucide="camera"></i></div>
+                            <div>
+                                <h3 class="font-bold text-lg">1. Snap & Speak</h3>
+                                <p class="text-sm">Take a photo and describe your art in your own language.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="step-2" class="step-indicator p-6 rounded-lg mb-4 cursor-pointer">
+                         <div class="flex items-center gap-4">
+                            <div class="bg-white text-[#c77d45] p-3 rounded-full"><i data-lucide="wand-2"></i></div>
+                            <div>
+                                <h3 class="font-bold text-lg">2. AI Magic</h3>
+                                <p class="text-sm">Our AI enhances your photo and writes a beautiful story.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="step-3" class="step-indicator p-6 rounded-lg cursor-pointer">
+                         <div class="flex items-center gap-4">
+                            <div class="bg-white text-[#c77d45] p-3 rounded-full"><i data-lucide="rocket"></i></div>
+                            <div>
+                                <h3 class="font-bold text-lg">3. Go Live!</h3>
+                                <p class="text-sm">Review your stunning listing and post it to the world.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-2/3 bg-white p-6 rounded-lg shadow-lg">
+                    <div id="step-visual-1" class="step-visual fade-in">
+                        <h4 class="font-bold mb-4 text-center text-lg">Step 1: Simple Input</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="border-2 border-dashed border-gray-300 rounded-lg p-8 flex flex-col items-center justify-center text-center">
+                                <i data-lucide="image-plus" class="w-16 h-16 text-gray-400 mb-4"></i>
+                                <p class="font-semibold">Upload Photo</p>
+                                <p class="text-sm text-gray-500">Your beautiful Madhubani painting.</p>
+                            </div>
+                            <div class="border-2 border-dashed border-gray-300 rounded-lg p-8 flex flex-col items-center justify-center text-center">
+                                 <i data-lucide="mic" class="w-16 h-16 text-gray-400 mb-4"></i>
+                                 <p class="font-semibold">Record Story</p>
+                                 <p class="text-sm text-gray-500">"This shows the divine fish, Matsya. It took me 5 days..."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="step-visual-2" class="step-visual fade-in hidden">
+                        <h4 class="font-bold mb-4 text-center text-lg">Step 2: AI Transformation</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-start">
+                            <div>
+                                <p class="text-center font-semibold mb-2 text-red-500">Before</p>
+                                <img src="https://placehold.co/400x400/FFF0E0/3f352e?text=Original+Photo\n(Cluttered+BG)" alt="Before AI enhancement" class="rounded-lg shadow-md">
+                           </div>
+                            <div>
+                                <p class="text-center font-semibold mb-2 text-green-500">After</p>
+                                <img src="https://placehold.co/400x400/FFFFFF/3f352e?text=AI+Enhanced\n(Clean+BG)" alt="After AI enhancement" class="rounded-lg shadow-md">
+                                <div class="mt-4 p-3 bg-gray-50 rounded-md">
+                                    <p class="font-bold text-sm">AI-Generated Description:</p>
+                                    <p class="text-xs text-gray-600">"An exquisite Madhubani painting depicting the Matsya avatar, handcrafted over five days with natural dyes..."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <div id="step-visual-3" class="step-visual fade-in hidden">
+                         <h4 class="font-bold mb-4 text-center text-lg">Step 3: Your Professional Listing is Ready!</h4>
+                         <div class="bg-white p-4 rounded-lg border border-gray-200 shadow-sm max-w-md mx-auto">
+                            <img src="https://placehold.co/400x300/FFFFFF/3f352e?text=Final+Product+Image" alt="Final product listing" class="rounded-lg mb-4 w-full">
+                            <h5 class="font-bold text-xl">Hand-Painted Matsya Avatar Art</h5>
+                            <p class="font-serif text-lg text-[#c77d45] mb-2">₹1,850</p>
+                            <p class="text-sm text-gray-600 mb-4">An exquisite Madhubani painting depicting the Matsya avatar, handcrafted over five days with natural dyes by a master artisan from Bihar...</p>
+                            <button class="w-full bg-[#c77d45] text-white font-semibold py-2 px-4 rounded-lg cta-button">Post to Marketplace</button>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<section id="create" class="mb-16 md:mb-24 text-center">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">Bring Your Vision to Life</h2>
+            <p class="max-w-3xl mx-auto text-gray-600 mb-12">
+                Have a unique design in mind? Upload a sketch or an inspiration image. Our AI will help describe it, and we'll share it with our network of talented artisans.
+            </p>
+
+            <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    
+                    <div class="text-center">
+                        <div id="image-upload-box" class="border-2 border-dashed border-gray-300 rounded-lg p-8 flex flex-col items-center justify-center cursor-pointer hover:bg-gray-50 transition-colors">
+                            <i data-lucide="upload-cloud" class="w-16 h-16 text-gray-400 mb-4"></i>
+                            <p class="font-semibold">Click to upload your design</p>
+                            <p class="text-sm text-gray-500">PNG, JPG, or WEBP</p>
+                            <input type="file" id="design-upload-input" class="hidden" accept="image/png, image/jpeg, image/webp">
+                        </div>
+                        <img id="image-preview" src="" alt="Your design preview" class="hidden mt-4 rounded-lg max-h-64 mx-auto shadow-md"/>
+                    </div>
+
+                    <div id="ai-analysis-section" class="text-left">
+                        <h3 class="font-bold text-xl mb-4">Let's Craft the Details</h3>
+                        <p id="ai-instructions" class="text-gray-500 mb-6">Upload an image to get started. For example, a modern take on a traditional Kolhapuri Saaj necklace.</p>
+                        
+                        <div id="ai-results" class="hidden">
+                            <div>
+                                <label class="font-semibold text-gray-700">AI-Generated Description:</label>
+                                <p id="ai-description" class="mt-1 text-sm text-gray-600 bg-gray-50 p-3 rounded-md min-h-[80px]"></p>
+                            </div>
+                            <div class="mt-4">
+                                <label class="font-semibold text-gray-700">Suggested Tags:</label>
+                                <div id="ai-tags" class="mt-2 flex flex-wrap gap-2">
+                                    </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-6">
+                            <button id="analyze-button" class="w-full bg-[#c77d45] text-white font-semibold py-3 px-4 rounded-lg cta-button flex items-center justify-center gap-2 disabled:bg-gray-400" disabled>
+                                <div id="loader" class="hidden"></div>
+                                <span id="analyze-button-text">Analyze with AI</span>
+                            </button>
+                            <button id="submit-button" class="hidden w-full mt-4 bg-green-600 text-white font-semibold py-3 px-4 rounded-lg cta-button">
+                                Submit to Artisans
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="discover" class="bg-white rounded-lg p-8 md:p-12 shadow-lg">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">Discover the Soul of India</h2>
+                <p class="max-w-3xl mx-auto text-gray-600">
+                    Explore authentic crafts, meet the artisans behind them, and bring home a piece of their story.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="feature-card bg-gray-50 rounded-lg overflow-hidden shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1620523458293-2c35a65a3838?q=80&w=1974&auto=format&fit=crop" alt="Pattachitra Painting" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Pattachitra Scroll Painting</h3>
+                        <p class="text-sm text-gray-600 mb-4">A vibrant narrative of folklore from the villages of Odisha, painted on cloth.</p>
+                        <div class="flex items-center gap-3 pt-4 border-t border-gray-200">
+                            <img src="https://placehold.co/40x40/ccc/333?text=A" alt="Artisan" class="w-10 h-10 rounded-full object-cover">
+                            <div>
+                                <p class="font-semibold text-sm">By Ananya Das</p>
+                                <p class="text-xs text-gray-500">Puri, Odisha</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-card bg-gray-50 rounded-lg overflow-hidden shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1615092043553-6eac3316b8a8?q=80&w=1964&auto=format&fit=crop" alt="Blue Pottery" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Jaipur Blue Pottery Vase</h3>
+                        <p class="text-sm text-gray-600 mb-4">Turquoise-hued pottery crafted from quartz, a unique ceramic tradition of Jaipur.</p>
+                         <div class="flex items-center gap-3 pt-4 border-t border-gray-200">
+                            <img src="https://placehold.co/40x40/ddd/333?text=R" alt="Artisan" class="w-10 h-10 rounded-full object-cover">
+                            <div>
+                                <p class="font-semibold text-sm">By Rajan Singh</p>
+                                <p class="text-xs text-gray-500">Jaipur, Rajasthan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-card bg-gray-50 rounded-lg overflow-hidden shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1594109220244-966953a936a7?q=80&w=1935&auto=format&fit=crop" alt="Kutch Embroidery" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Handwoven Kutch Shawl</h3>
+                        <p class="text-sm text-gray-600 mb-4">Intricate mirror-work and colorful threads form the heart of Rabari embroidery.</p>
+                         <div class="flex items-center gap-3 pt-4 border-t border-gray-200">
+                            <img src="https://placehold.co/40x40/bbb/333?text=L" alt="Artisan" class="w-10 h-10 rounded-full object-cover">
+                            <div>
+                                <p class="font-semibold text-sm">By Leela Ben</p>
+                                <p class="text-xs text-gray-500">Bhuj, Gujarat</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="tech" class="text-center mt-16 md:mt-24">
+            <h2 class="text-2xl md:text-3xl font-serif font-bold mb-3">Powered by Google Cloud</h2>
+             <p class="max-w-2xl mx-auto text-gray-500 mb-10">
+                Leveraging cutting-edge generative AI to bridge the gap between tradition and technology.
+            </p>
+            <div class="flex flex-wrap justify-center items-center gap-x-8 gap-y-6">
+                <div class="tech-logo-container flex items-center gap-2">
+                    <img src="https://www.gstatic.com/images/branding/product/2x/vertex_ai_32dp.png" alt="Vertex AI" class="h-8">
+                    <span class="font-semibold">Vertex AI (Gemini)</span>
+                </div>
+                 <div class="tech-logo-container flex items-center gap-2">
+                    <img src="https://www.gstatic.com/images/branding/product/2x/vision_ai_32dp.png" alt="Vision AI" class="h-8">
+                    <span class="font-semibold">Vision AI</span>
+                </div>
+                 <div class="tech-logo-container flex items-center gap-2">
+                    <img src="https://www.gstatic.com/images/branding/product/2x/translation_ai_32dp.png" alt="Translation AI" class="h-8">
+                    <span class="font-semibold">Translation AI</span>
+                </div>
+                 <div class="tech-logo-container flex items-center gap-2">
+                    <img src="https://www.gstatic.com/images/branding/product/2x/cloud_run_32dp.png" alt="Cloud Run" class="h-8">
+                    <span class="font-semibold">Cloud Run</span>
+                </div>
+                 <div class="tech-logo-container flex items-center gap-2">
+                    <img src="https://www.gstatic.com/images/branding/product/2x/firebase_32dp.png" alt="Firebase" class="h-8">
+                    <span class="font-semibold">Firebase</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-[#3f352e] text-white">
+        <div class="container mx-auto px-6 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-center md:text-left mb-4 md:mb-0">
+                    <h3 class="text-xl font-serif font-bold text-[#c77d45]">Kala<span class="text-white">Connect</span> AI</h3>
+                    <p class="text-gray-400 text-sm">Preserving heritage, one craft at a time.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white"><i data-lucide="twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i data-lucide="instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i data-lucide="facebook"></i></a>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-4 text-center text-gray-500 text-sm">
+                &copy; 2025 KalaConnect AI. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <div id="chatbot-container" class="fixed bottom-6 right-6 md:bottom-8 md:right-8 z-[1000]">
+        <div id="chat-window" class="w-80 md:w-96 h-[70vh] max-h-[600px] bg-white rounded-lg shadow-2xl flex flex-col transition-all duration-300 ease-in-out origin-bottom-right transform scale-95 opacity-0 pointer-events-none">
+            <div class="bg-[#3f352e] text-white p-4 rounded-t-lg flex justify-between items-center flex-shrink-0">
+                <h3 class="font-bold text-lg">AI Artisan Assistant</h3>
+                <button id="close-chat" class="text-white hover:text-gray-300">
+                    <i data-lucide="x" class="w-6 h-6"></i>
+                </button>
+            </div>
+            <div id="chat-messages" class="flex-1 p-4 overflow-y-auto bg-[#fdfaf7]">
+                <div class="flex mb-4 fade-in">
+                    <div class="bg-[#c77d45] text-white p-3 rounded-lg max-w-xs shadow">
+                        <p class="text-sm">Namaste! I'm your AI assistant. How can I help you explore the world of Indian crafts today?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-4 border-t border-gray-200 bg-white rounded-b-lg flex-shrink-0">
+                <div class="flex gap-2">
+                    <input type="text" id="chat-input" placeholder="Ask about Warli painting..." class="w-full px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-[#c77d45]">
+                    <button id="send-button" class="bg-[#c77d45] text-white px-4 py-2 rounded-full cta-button flex-shrink-0">
+                        <i data-lucide="send" class="w-5 h-5"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <button id="chat-bubble" class="bg-[#c77d45] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg cta-button mt-4 ml-auto">
+            <i data-lucide="message-circle" class="w-8 h-8"></i>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,4 +1,8 @@
 // Wait for the DOM to be fully loaded before running scripts
+require('dotenv').config();
+
+const myApiKey = process.env.GOOGLE_API_KEY;
+// Now use myApiKey to make your Google API calls
 document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize Lucide icons
@@ -90,7 +94,7 @@ Important Rules: If you don’t know a specific detail about a product, politely
         // =================================================================
         // === IMPORTANT: PASTE YOUR GOOGLE AI API KEY HERE ===
         // =================================================================
-        const apiKey = "";
+        const apiKey = "AIzaSyCpwV-c7G5j8CRCvbw52w9D8SfoGIIv02M";
         // =================================================================
 
         const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${apiKey}`;
@@ -189,7 +193,7 @@ Important Rules: If you don’t know a specific detail about a product, politely
         analyzeButton.disabled = true;
 
         // --- AI API Call ---
-        const apiKey = ""; // IMPORTANT: Make sure your key is here!
+        const apiKey = "AIzaSyCpwV-c7G5j8CRCvbw52w9D8SfoGIIv02M"; // IMPORTANT: Make sure your key is here!
         const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${apiKey}`;
 
         const prompt = `Analyze this image of a customer's design idea, likely for jewelry or a craft item. Provide a short, appealing description for an artisan to read, and a list of 5-7 relevant tags. Format the output exactly like this:
